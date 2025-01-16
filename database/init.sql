@@ -89,3 +89,23 @@ INSERT INTO BookStatuses (status_name) VALUES
 ('Доступна'),
 ('Выдана'),
 ('Списана');
+
+-- Структура таблицы `admins`
+CREATE TABLE IF NOT EXISTS `javafxTest`.`admins` (
+  `AdminID` int NOT NULL,
+  `FIO` varchar(45) NOT NULL,
+  `Salary` int NOT NULL,
+  `Login` varchar(45) NOT NULL,
+  `Password` varchar(45) NOT NULL,
+  PRIMARY KEY (`AdminID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Структура таблицы `users`
+CREATE TABLE IF NOT EXISTS `javafxTest`.`users` (
+  `UserID` int NOT NULL,
+  `FIO` varchar(45) NOT NULL,
+  `Passport` varchar(45) NOT NULL,
+  `Login` varchar(45) NOT NULL,
+  `Passw` varchar(45) NOT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

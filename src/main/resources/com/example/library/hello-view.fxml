@@ -1,16 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.library.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="198.0" layoutY="91.0" text="Авторизация">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="47.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5522823333740234" green="0.6381579041481018" blue="0.31612449884414673" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.16610738255033558">
+                     <color>
+                        <Color red="0.5522823333740234" green="0.6381579041481018" blue="0.31612449884414673" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.27520304918289185" green="0.40789473056793213" blue="0.15107212960720062" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="214.0" layoutY="217.0" text="Пароль">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7764706015586853" green="0.6745098233222961" blue="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2697368562221527" green="0.1776391863822937" blue="0.048702485859394073" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="214.0" layoutY="155.0" text="Логин">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7764706015586853" green="0.6745098233222961" blue="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2697368562221527" green="0.1776391863822937" blue="0.048702485859394073" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField layoutX="214.0" layoutY="239.0" prefHeight="26.0" prefWidth="195.0" />
+      <TextField layoutX="214.0" layoutY="187.0" prefHeight="26.0" prefWidth="195.0" />
+      <Button layoutX="262.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#button" prefHeight="31.0" prefWidth="97.0" text="Войти" textAlignment="CENTER" textFill="#423304bc">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="10.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
